@@ -1,5 +1,6 @@
 # TP2_Login page
- login page + user list
+
+Nom&Prenom : Khadim Abdelaziz
 
 *LoginPage est une application Android qui permet à l'utilisateur de visualiser une liste d'utilisateurs et de filtrer cette liste par recherche textuelle. Elle comprend également une page de connexion (LoginPage) et une page d'inscription (RegisterPage), ainsi qu'une page de détails utilisateur (UserDetailsPage).
 
