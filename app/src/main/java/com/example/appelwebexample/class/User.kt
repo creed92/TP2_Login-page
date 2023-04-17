@@ -10,5 +10,7 @@ data class User(
     val genre: String,
     val avatar: String,
     val company: Company,
-    val address: Address
+    val address: Address,
+    val note:String,
+    val email:String
 )

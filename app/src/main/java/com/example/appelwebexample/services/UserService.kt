@@ -2,10 +2,10 @@
 import com.example.appelwebexample.`class`.User
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import okhttp3.ResponseBody
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import retrofit2.http.GET
-import retrofit2.http.Path
+import retrofit2.http.*
 
 private const val BASE_URL =
     "https://64343c2f582420e23177630d.mockapi.io/api/v1/project1/"
@@ -44,6 +44,22 @@ interface UserApiService {
      */
     @GET("USER/{id}")
     suspend fun getUser(@Path("id") id: String) : User
+
+
+    //modify users note
+    @PUT("USER/{id}")
+    suspend fun updateUser(@Path("id") id: String, @Body user: User): User
+
+
+    //adding password an username fun
+    @POST("login")
+    suspend fun authenticateUser(@Body user: User): ResponseBody
+
+    @POST("users")
+    suspend fun registerUser(@Body user: User): User
+
+
+
 }
 
 /**

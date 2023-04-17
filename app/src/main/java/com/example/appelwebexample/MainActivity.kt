@@ -17,7 +17,10 @@ import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import com.example.appelwebexample.`class`.User
 import java.security.MessageDigest
+import javax.crypto.Mac
+import javax.crypto.spec.SecretKeySpec
 
 class MainActivity : AppCompatActivity() {
 
@@ -199,5 +202,13 @@ class MainActivity : AppCompatActivity() {
     private val sharedPreferencesKey = "MY_SHARED_PREFERENCES"
     private val usernameKey = "USERNAME"
     private val passwordKey = "PASSWORD"
+
+
+
+
+
+
+
+
 
 }

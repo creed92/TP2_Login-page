@@ -37,4 +37,16 @@ class UserViewModel : ViewModel() {
             }
         }
     }
+
+    fun updateUser(user: User) {
+        val userIdString = user.id.toString()
+        viewModelScope.launch {
+            try {
+                UserApi.retrofitService.updateUser(userIdString, user)
+                _status.value = "Success: User updated"
+            } catch (e: Exception) {
+                _status.value = "Failure: ${e.message}"
+            }
+        }
+    }
 }

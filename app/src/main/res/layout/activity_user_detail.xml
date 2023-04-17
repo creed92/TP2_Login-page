@@ -1,245 +1,327 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_vertical"
-    android:background="@color/bl1">
-
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="116dp"
-        android:layout_height="116dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/shape4"
-
-        android:clipToOutline="true" />
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name:"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/bl3"
-        android:layout_marginLeft="12dp"/>
-
-    <TextView
-        android:layout_marginBottom="8dp"
-        android:textSize="16dp"
-        android:layout_marginLeft="12dp"
-        android:id="@+id/nameTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name:"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:layout_marginLeft="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Birthdate:"
-        android:textColor="@color/bl3"/>
-
-    <TextView
-        android:id="@+id/birthdateTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Birthdate:"
-        android:layout_marginBottom="8dp"
-        android:textSize="16dp"
-        android:layout_marginLeft="12dp"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Genre:"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/bl3"
-        android:layout_marginLeft="12dp"/>
-
-    <TextView
-        android:id="@+id/genreTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Genre:"
-        android:layout_marginBottom="8dp"
-        android:textSize="16dp"
-        android:layout_marginLeft="12dp"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Street:"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/bl3"
-        android:layout_marginLeft="12dp"/>
-
-    <TextView
-        android:id="@+id/streetTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Street:"
-        android:layout_marginBottom="8dp"
-        android:textSize="16dp"
-        android:layout_marginLeft="12dp"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="City:"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/bl3"
-        android:layout_marginLeft="12dp"/>
-
-    <TextView
-        android:id="@+id/cityTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="City:"
-        android:layout_marginBottom="8dp"
-        android:textSize="16dp"
-        android:layout_marginLeft="12dp"
-        android:textColor="@android:color/white"/>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Zipcode:"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/bl3"
-        android:layout_marginLeft="12dp" />
-
-    <TextView
-        android:id="@+id/zipcodeTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Zipcode:"
-        android:textSize="16dp"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="12dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Company:"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/bl3"
-        android:layout_marginLeft="12dp" />
-
-    <TextView
-        android:id="@+id/companyTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Company:"
-        android:textSize="16dp"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="12dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Company Description:"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/bl3"
-        android:layout_marginLeft="12dp" />
-
-    <TextView
-        android:id="@+id/descriptionTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Company Description:"
-        android:textSize="16dp"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="12dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Company adress/Street:"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/bl3"
-        android:layout_marginLeft="12dp" />
-
-    <TextView
-        android:id="@+id/comStreetTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Company Street:"
-        android:textSize="16dp"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="12dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Company adress/City:"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/bl3"
-        android:layout_marginLeft="12dp" />
-
-    <TextView
-        android:id="@+id/comCityTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Company City:"
-        android:textSize="16dp"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="12dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Company adress/Zipcode:"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/bl3"
-        android:layout_marginLeft="12dp" />
-
-
-
-    <TextView
-        android:id="@+id/comZipTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Company Zipcode:"
-        android:layout_marginBottom="15dp"
-        android:textSize="16dp"
-        android:textColor="#FFFFFF"
-        android:layout_marginLeft="12dp" />
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    android:scrollbarSize="12dp"
+    android:scrollbarThumbVertical="@drawable/shape4">
 
 
 
 
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/shape"
-        android:textColor="@color/bl4"
-        android:text="Back"
-        android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bl1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="96dp"
+                android:layout_height="101dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/shape4"
+                android:layout_marginTop="12dp"
+
+                android:clipToOutline="true" />
 
 
-</LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Name:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Name:"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Birthdate:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/birthdateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Birthdate:"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Genre:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/genreTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Genre:"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Street:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/streetTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Street:"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="City:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="City:"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Zipcode:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/zipcodeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Zipcode:"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="E-mail:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="mail:"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:autoLink="email"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Company:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/companyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Company:"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Company Description:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Company Description:"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Company adress/Street:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comStreetTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Company Street:"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Company adress/City:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comCityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Company City:"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Company adress/Zipcode:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comZipTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="Company Zipcode:"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Note:"
+                android:textColor="@color/bl3"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+
+                android:text="note:"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/apply_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply"
+                    android:textColor="@color/bl4"
+                    android:background="@drawable/shape"
+                    android:layout_marginRight="3dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/bl4"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape"
+                android:text="Back"
+                android:textColor="@color/bl4" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
